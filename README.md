@@ -27,8 +27,8 @@ We took on the following steps to resolve this project:
 ## Instructions
 
 To run the project, simply run the following commands in the shell:
-> python create_queries.py
-> python etl.py
+- python create_queries.py
+- python etl.py
 
 Note that all connections to our Sparkify database need to be stopped before running those commands. If a notebook is connected to our database, we can "kill" that connection by refreshing/reseting the Jupyter notebook.
 
