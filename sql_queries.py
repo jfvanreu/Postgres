@@ -39,8 +39,8 @@ song_table_create = ("""CREATE TABLE IF NOT EXISTS songs (song_id varchar PRIMAR
 """)
 
 songplay_table_create = (""" CREATE TABLE IF NOT EXISTS songplays (songplay_id SERIAL PRIMARY KEY, 
-                                                                   start_time timestamptz, 
-                                                                   user_id int, 
+                                                                   start_time timestamptz NOT NULL, 
+                                                                   user_id int NOT NULL, 
                                                                    level varchar, 
                                                                    song_id varchar, 
                                                                    artist_id varchar, 
